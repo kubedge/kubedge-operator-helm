@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubedge-operator-helm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: kubedge-operator-helm
+  template:
+    metadata:
+      labels:
+        name: kubedge-operator-helm
+    spec:
+      containers:
+        - name: kubedge-operator-helm
+          image: REPLACE_IMAGE
+          imagePullPolicy: Always
+          env:
+            - name: WATCH_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace

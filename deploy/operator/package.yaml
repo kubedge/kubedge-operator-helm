@@ -1,0 +1,4 @@
+packageName: kubedge
+channels:
+- name: alpha
+  currentCSV: kubedge-operator-helm-csv.v0.0.1

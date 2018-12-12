@@ -1,0 +1,6 @@
+apiVersion: arpscan.kubedge.cloud/v1alpha1
+kind: Kubedge
+metadata:
+  name: example-kubedge
+spec:
+  replicaCount: 2
