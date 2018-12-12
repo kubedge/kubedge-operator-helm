@@ -4,7 +4,7 @@ metadata:
   name: kubedge-operator
 rules:
 - apiGroups:
-  - kubedge.cloud
+  - arpscan.kubedge.cloud
   resources:
   - "*"
   verbs:
@@ -36,6 +36,16 @@ rules:
   - statefulsets
   verbs:
   - "*"
+- apiGroups:
+  - extensions
+  resources:
+  - deployments
+  - daemonsets
+  - replicasets
+  - statefulsets
+  verbs:
+  - "*"
+
 
 ---
 

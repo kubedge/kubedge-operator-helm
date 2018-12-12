@@ -1,5 +1,5 @@
 ---
-- group: kubedge.cloud
+- group: arpscan.kubedge.cloud
   version: v1alpha1
   kind: Kubedge
   chart: /helm-charts/kubedge-arpscan-amd64

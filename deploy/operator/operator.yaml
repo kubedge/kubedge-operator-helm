@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: kubedge-operator-helm
-          image: REPLACE_IMAGE
+          image: hack4easy/kubedge-operator-helm-dev:v0.0.1
           imagePullPolicy: Always
           env:
             - name: WATCH_NAMESPACE
